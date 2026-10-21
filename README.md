@@ -1,75 +1,55 @@
-## **Instructions**
+# Poem Quest — Assignment 5
 
-### **Step-by-Step: Getting Set Up**
+Brooke Jiang · Introduction to Coding for Learning Designers
 
+A semantic HTML foundation for an immersive experience based on Li Bai's 静夜思 (Quiet Night Thought). The content follows my Assignment 4 mockup: cool reality → warm imagined memories → cool reality.
 
-**1\. Click the green "Use this template" button**
+## Section inventory
 
-This creates a brand new repository under your own GitHub account, pre-loaded with the starting files.
+Header/navigation → Landing → Moonlight → Look Up → Family Memory → Friends Memory → Return & Reflection → Footer.
 
-**2\. Name your repository**
+The six story sections are all visible in normal document flow. Family and friends are imagined memories, not literal events stated in the poem.
 
-Use this naming convention:
+## Files
 
-`nyu-f26-lastname-firstname`
+- index.html: document metadata, navigation, six commented story sections, complete poem, reflection and replay links, footer.
+- style.css: template reset plus Style Tile fonts, color variables and spacing in multiples of 8px.
+- .devcontainer/: development setup inherited from profJoey/nyu-f26-project-template.
 
-**3\. Click "Create repository from template"**
+## Why these HTML elements?
 
-GitHub copies the files and takes you to your new repo page.
+- header and nav identify the brand and navigation.
+- main contains the primary story, separate from navigation and credits.
+- section is used for each distinct scene; each has an accessible heading.
+- One h1 names the experience. Five h2 headings name the following scenes.
+- p holds prose and poetry; br preserves poetic line breaks.
+- a moves to another section, so these controls are links rather than buttons with no action.
+- details and summary provide native, keyboard-operable menu and reflection disclosure without JavaScript.
+- footer identifies the original poem and author.
 
-**4\. Click the green "Code" button → "Create Codespace"**
+## Style Tile applied
 
-**5\. Wait about 15 minutes while it boots up**
+- Noto Serif SC: headings and Chinese poetry; Inter: navigation, prose and labels.
+- Indigo #10182D: reality/background; moon white #F5EEDC: text and primary links.
+- Warm ink #4A2D22: imagined memories; amber #D5A35C: decorative memory boundaries.
+- Slate #34465F: section dividers.
+- Spacing: 8, 16, 24, 48px. Body: 16px/24px; poetry: 28px/42px.
+- Solid-color text contrast: moon/indigo 15.24:1; moon/warm ink 10.74:1.
 
-This is normal. Codespaces is spinning up a virtual computer for you in the cloud, installing dependencies, and opening VS Code in your browser. Grab a sip of water while it loads.
+## Preview in Codespaces
 
-**6\. You're ready**
+Open this repository with Code → Codespaces. Right-click index.html → Open with Live Server, then open the forwarded preview. No build step or dependencies are needed for the page.
 
-When the browser tab opens to VS Code, open the `style.css` file in the file explorer on the left. The base styles are already written for you, and each rule has **STEP** comments showing where the grid properties go. That's your starting point — we'll type the grid code together in class, one step at a time.
+## Current assignment scope
 
----
+This is the HTML and basic CSS stage, not the finished cinematic game. No images, media, Flexbox, Grid, animations, transitions or JavaScript are included. Separate section containers and shared classes leave the structure ready for later responsive composition. The moonlight exploration and camera/memory transitions remain future work; the current links simply move to the next scene.
 
-## **GitHub Codespaces — A Brief Guide**
+## AI assistance disclosure
 
-### **What Is It?**
+ChatGPT/Codex assisted with translating the existing Assignment 4 scene order, fonts and palette into initial HTML/CSS, explaining semantic elements, and checking the structure. The story concept and prior visual decisions come from Brooke's Poem Quest design. This disclosure does not claim independent coding or completed student review; the student should review and revise the code, be able to explain it, and follow the syllabus's Student Acknowledgement of AI Use before submitting.
 
-Codespaces is a development environment that runs entirely in your browser. Instead of installing software on your own computer, you get a virtual computer in the cloud — pre-configured and ready to code — that you access through a web browser. Microsoft (which owns GitHub) hosts it.
+## Submission
 
-### **What It Saves Us From**
+Submit the repository URL: https://github.com/peihannn/f26-nyu-project-jiang-brooke
 
-Normally, getting a development environment set up requires installing and configuring a bunch of tools:
-
-* A code editor (VS Code)  
-* A terminal (command line)  
-* Git (version control)  
-* Node.js, Python, or whatever runtime the project needs  
-* Extensions, themes, settings
-
-Each one of these can break in unique ways depending on your operating system, your computer's permissions, or just bad luck. **Codespaces eliminates all of that.** You click one button and you're in a fully working environment. No "it works on my machine" problems.
-
-### **How It Works (High Level)**
-
-1. A project lives in a GitHub repository.  
-2. You click the green **Code** button and select **Open with Codespaces**.  
-3. GitHub spins up a lightweight virtual machine running Linux, installs the project's dependencies automatically, and opens a browser-based version of VS Code.  
-4. You code, save, and commit just like you would on your local machine.  
-5. When you're done, you stop the Codespace. Next time you come back, everything is exactly where you left it.
-
-The environment is defined by a file called `devcontainer.json` (or `.devcontainer/`) in the repository. It's like a recipe that tells GitHub "this project needs X, Y, and Z."
-
-### **The Catch: It's Slow to Start (And Why)**
-
-A cold start takes **1–3 minutes**. Here's why:
-
-* **A new virtual machine has to boot.** Codespaces isn't "running" until you open it. There's no always-on computer — one is created for you on demand. That means spinning up an OS from scratch.  
-* **Your dependencies install.** If the project requires packages or libraries, Codespaces runs the install process when it starts. This is the same `npm install` or `pip install` you'd run locally — it just happens automatically.  
-* **Extensions and settings sync.** VS Code loads your extensions, themes, and preferences from your GitHub account.
-
-**Once it's running, it's fast.** The delay is only on the first launch of the day (or after you've manually stopped the Codespace). If you keep it open between sessions, there's no wait.
-
-### **Tips**
-
-* **Don't close your Codespace mid-session.** Just leave the tab open. If you close it, stop the Codespace from the GitHub dashboard so it doesn't eat into your monthly usage hours.  
-* **Your work is saved automatically.** Even if the Codespace stops, the files are stored on GitHub. You won't lose anything.  
-* **You get a fixed number of free hours per month** through the GitHub Student Developer Pack. A cold start uses some of those hours just booting up, so it's worth keeping one Codespace alive while you're actively working.  
-* **If you need to work offline,** you can always install VS Code and Git locally instead but it does take some set up — Codespaces is a convenience, not a requirement.
+Do not submit the temporary Codespaces or Live Server preview URL. Canvas submission is handled by the student.
