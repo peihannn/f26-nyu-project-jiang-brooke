@@ -37,12 +37,13 @@ These are six scenes of one story, not commercial feature sections.
   </header>
 
   <main id="main-content">
+    <!-- Intended later: brief delayed CTA fade and cinematic artwork. Neither is implemented in Assignment 5. -->
     <!-- 01 / HERO: the beginning, alone in an unfamiliar guest room. -->
     <section id="landing" aria-labelledby="landing-title">
       <p class="eyebrow">01 / A quiet night</p>
       <h1 id="landing-title">Poem Quest</h1>
       <p class="poem" lang="zh-Hans">静夜思 · 李白</p>
-      <p>A quiet night, far from home.</p>
+      <p>Li Bai sits alone in a guest room. Moonlight enters through the window.</p>
       <a class="primary-link" href="#moonlight">BEGIN EXPERIENCE</a>
     </section>
 
@@ -50,35 +51,53 @@ These are six scenes of one story, not commercial feature sections.
     <section id="moonlight" aria-labelledby="moonlight-title">
       <p class="eyebrow">02 / Moonlight</p>
       <h2 id="moonlight-title" lang="zh-Hans">月光似霜</h2>
-      <p class="poem" lang="zh-Hans">床前明月光，<br>疑是地上霜。</p>
-      <p>Moonlight rests on the floor, pale as frost.</p>
-      <a class="primary-link" href="#look-up">TOUCH THE LIGHT</a>
+      <p>A pale patch of light lies beside the bed. Frost?</p>
+      <!-- Native disclosure makes exploration real without JavaScript. -->
+      <details class="story-action">
+        <summary>EXPLORE THE MOONLIGHT</summary>
+        <p>The floor is still. It is moonlight, not frost.</p>
+        <p class="poem" lang="zh-Hans">床前明月光，<br>疑是地上霜。</p>
+        <a class="primary-link" href="#look-up">FOLLOW THE LIGHT UPWARD</a>
+      </details>
     </section>
 
     <!-- 03 / LOOK UP: the moon connects reality with imagined memories. -->
     <section id="look-up" aria-labelledby="look-up-title">
       <p class="eyebrow">03 / Look up</p>
       <h2 id="look-up-title" lang="zh-Hans">举头望月</h2>
-      <p class="poem" lang="zh-Hans">举头望明月。</p>
-      <p>He raises his head. The same moon shines over home.</p>
-      <a class="primary-link" href="#family-memory">FOLLOW THE MOON</a>
+      <p>The light leads from the floor to the window.</p>
+      <details class="story-action">
+        <summary>RAISE YOUR GAZE</summary>
+        <p>Li Bai lifts his head toward the moon. For a moment, home feels close.</p>
+        <p class="poem" lang="zh-Hans">举头望明月。</p>
+        <!-- The moon is the narrative trigger into the imagined warm scenes. -->
+        <a class="primary-link" href="#family-memory">FOLLOW THE MOON HOME</a>
+      </details>
     </section>
 
     <!-- 04 / FAMILY MEMORY: warm interior, a shared table and family. -->
     <section class="memory" id="family-memory" aria-labelledby="family-title">
       <p class="eyebrow">04 / Family memory</p>
       <h2 id="family-title" lang="zh-Hans">家人团聚</h2>
-      <p>A lantern glows above a family gathered around the table.</p>
+      <p>A lantern above the family table. An elder pours tea; a child reaches for a bowl.</p>
+      <details class="story-action">
+        <summary>STAY AT THE TABLE</summary>
+        <p>Someone draws an empty chair closer. For a moment, there is a place for him.</p>
+      </details>
       <p class="scene-note">Imagined memory of home; not a literal event stated in the poem.</p>
-      <a class="primary-link" href="#friends-memory">LINGER A MOMENT</a>
+      <a class="primary-link" href="#friends-memory">STEP INTO THE COURTYARD</a>
     </section>
 
     <!-- 05 / FRIENDS MEMORY: a different setting, a courtyard and poetry. -->
     <section class="memory" id="friends-memory" aria-labelledby="friends-title">
       <p class="eyebrow">05 / Friends memory</p>
       <h2 id="friends-title" lang="zh-Hans">朋友相聚</h2>
-      <p>In a moonlit courtyard, friends share wine and poetry.</p>
-      <p class="scene-note">Imagined memory of companionship; not a literal event stated in the poem.</p>
+      <p>Outside, beneath a pavilion, friends pass a cup of wine and trade lines of poetry.</p>
+      <details class="story-action">
+        <summary>LISTEN A MOMENT</summary>
+        <p>A familiar voice begins a verse. He remembers how the others would finish it.</p>
+      </details>
+      <p class="scene-note">Imagined memory of home; not a literal event stated in the poem.</p>
       <a class="primary-link" href="#return-reflection">LET THE MEMORY FADE</a>
     </section>
 
@@ -86,13 +105,15 @@ These are six scenes of one story, not commercial feature sections.
     <section id="return-reflection" aria-labelledby="return-title">
       <p class="eyebrow">06 / Return and reflection</p>
       <h2 id="return-title" lang="zh-Hans">低头思故乡</h2>
-      <p>Back in the quiet room, he lowers his head.</p>
+      <p>The voices are gone. Alone in the cold guest room again, Li Bai lowers his head toward the moonlit floor.</p>
       <p class="poem" lang="zh-Hans">床前明月光，<br>疑是地上霜。<br>举头望明月，<br>低头思故乡。</p>
-      <a class="primary-link" href="#landing">EXPERIENCE AGAIN</a>
+      <a class="primary-link" href="#landing">RETURN TO THE BEGINNING</a>
       <details class="reflection">
         <summary>REFLECT</summary>
         <p>What brings home to mind for you?</p>
-        <p>Notice the journey from solitude, through remembered warmth, back to longing.</p>
+        <label for="home-thought">A place, a person, or a small moment</label>
+        <textarea id="home-thought" rows="3" placeholder="Write a thought for yourself…"></textarea>
+        <p class="scene-note">Your words stay in this page while it is open. They are not sent or saved.</p>
       </details>
     </section>
   </main>

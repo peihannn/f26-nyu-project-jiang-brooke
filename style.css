@@ -143,3 +143,42 @@ details p {
 
 /* Solid-color contrast: moon / indigo 15.24:1; moon / warm ink 10.74:1.
    Amber marks memory boundaries; it is not used for body text. */
+
+/* Story actions: disclosure first, discovery second, then the next scene.
+   Solid scene fields remain in normal document flow for Assignment 5. */
+.story-action {
+  max-width: 64ch;
+  margin: 24px 0;
+  padding: 16px;
+  border-left: 2px solid var(--moon);
+  background-color: var(--slate);
+}
+.memory .story-action {
+  background-color: var(--warm-ink);
+  border-left-color: var(--amber);
+}
+.story-action summary {
+  display: list-item;
+  min-height: 48px;
+  padding: 12px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.story-action[open] summary { margin-bottom: 16px; }
+.story-action .primary-link { margin-bottom: 8px; }
+label { display: block; margin: 16px 0 8px; }
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 48ch;
+  min-height: 96px;
+  padding: 16px;
+  border: 1px solid var(--moon);
+  border-radius: 0;
+  background-color: var(--indigo);
+  color: var(--moon);
+  font: inherit;
+}
+textarea::placeholder { color: var(--moon); opacity: 1; }
+/* Moon / slate is 8.30:1; all narrative text uses solid fields. */

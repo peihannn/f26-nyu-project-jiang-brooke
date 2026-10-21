@@ -53,3 +53,33 @@ ChatGPT/Codex assisted with translating the existing Assignment 4 scene order, f
 Submit the repository URL: https://github.com/peihannn/f26-nyu-project-jiang-brooke
 
 Do not submit the temporary Codespaces or Live Server preview URL. Canvas submission is handled by the student.
+
+
+## Story revision
+The six sections are six consecutive moments in one experience:
+guest room → floor moonlight → raised gaze / moon → imagined family table →
+imagined friends in a courtyard → lowered gaze / homesickness.
+
+The moonlight and raised-gaze disclosures reveal poetry only after the reader
+explores. Family and friends have different settings and optional moments to
+linger. Links move forward through the story. The last scene restores cold blue,
+shows the complete poem, and offers reflection or a return to the beginning.
+The reflection field sends nothing and has no persistent storage. Returning to
+the beginning scrolls there; it does not reset disclosures or erase the note.
+Native disclosure controls support mouse, touch and keyboard without JavaScript.
+
+This is the Assignment 5 semantic HTML and basic CSS foundation, not the finished
+cinematic game. All six sections remain in normal document flow as required.
+Artwork, camera movement, delayed fades, swipes and scene-state/reset logic are
+intended later behavior and are not implemented here. No images, media,
+Flexbox/Grid, transitions or animations have been added.
+
+AI assisted this story revision and code checks. Brooke still needs to review
+and understand the markup, CSS and design decisions before submitting it.
+
+Source audit: one h1, six labelled story sections, balanced tags, unique IDs,
+and every fragment link resolves. Calculated solid-color text contrast:
+moon #F5EEDC on indigo #10182D = 15.24:1; on slate #34465F = 8.30:1;
+on warm ink #4A2D22 = 10.74:1. Primary links have a 48px minimum height;
+story summaries have a 48px minimum height. The browser connection was blank
+during this revision, so visual/viewport and interaction QA remains unverified.
